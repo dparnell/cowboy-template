@@ -8,7 +8,7 @@ Installation
 
 Under Linux:
 
-Install erlang, rebar and postgresql-server with one of:
+Install erlang and rebar with one of:
 
 ```
 sudo yum install erlang rebar
