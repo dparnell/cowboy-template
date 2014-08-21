@@ -1,0 +1,5 @@
+{% extends "master.dtl" %}
+{% block title %}Not found{% endblock %}
+{% block content %}
+<h1>404 - NOT FOUND</h1>
+{% endblock %}
