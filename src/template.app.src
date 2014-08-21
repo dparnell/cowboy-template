@@ -1,0 +1,31 @@
+%% -*- mode: erlang;-*-
+
+{application, template, [
+                         {description, "Cowboy Web App Template."},
+                         {vsn, "0.0.1"},
+                         {modules, []},
+                         {registered, []},
+                         {applications, [
+                                                % System applications
+                                         kernel,
+                                         stdlib,
+                                         inets,
+                                         crypto,
+                                         public_key,
+                                         ssl,
+                                         sasl,
+                                         asn1,
+
+                                                % Things we actually want
+                                         cowlib,
+                                         cowboy,
+                                         ranch,
+                                         erlydtl
+                                        ]},
+                         {mod, {template_app, []}},
+                         {env, [
+                                {sessions, [
+                                            {cookies, []}
+                                           ]}
+                               ]}
+                        ]}.
